@@ -23,6 +23,8 @@ export default defineConfig({
       "process.env.APP_NAME": JSON.stringify(APP_NAME),
       'process.env.APP_VERSION': JSON.stringify(process.env.npm_package_version),
     },
+  },
+  resolve:{
     alias: {
       '@': resolve(__dirname, 'src'),
     }
