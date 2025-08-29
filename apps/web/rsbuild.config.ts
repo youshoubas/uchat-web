@@ -4,7 +4,7 @@ import { pluginSvgr } from '@rsbuild/plugin-svgr';
 import { pluginSass } from "@rsbuild/plugin-sass";
 import { RsdoctorRspackPlugin } from "@rsdoctor/rspack-plugin";
 import { SemiRspackPlugin } from "@douyinfe/semi-rspack-plugin";
-
+import { codeInspectorPlugin } from "code-inspector-plugin"
 
 import { resolve } from 'path';
 
@@ -54,6 +54,11 @@ export default defineConfig({
           theme: '@semi-bot/semi-theme-tsdd'
         })
       );
+      appendPlugins(
+        codeInspectorPlugin({
+          bundler: 'rspack'
+        })
+      );
     },
   },
   plugins: [
@@ -66,7 +71,7 @@ export default defineConfig({
           silenceDeprecations: ['legacy-js-api', 'import'],
         },
       },
-    })
+    }),
   ],
   output: {
     assetPrefix: PUBLIC_URL,
