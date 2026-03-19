@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.250971ea.css",
-    "main.js": "./static/js/main.3fcfe21a.js",
+    "main.js": "./static/js/main.744aae3b.js",
     "static/js/400.f4e57e17.chunk.js": "./static/js/400.f4e57e17.chunk.js",
     "static/media/icomoon.woff2": "./static/media/icomoon.536087723585cc76b849.woff2",
     "static/media/start_chat.svg": "./static/media/start_chat.dcd2d18fce92465ca860eaebf5c4d373.svg",
@@ -19,6 +19,6 @@
   },
   "entrypoints": [
     "static/css/main.250971ea.css",
-    "static/js/main.3fcfe21a.js"
+    "static/js/main.744aae3b.js"
   ]
 }
