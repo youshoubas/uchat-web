@@ -1,0 +1,63 @@
+.wk-message-file {
+    display: flex;
+    align-items: center;
+    padding: 12px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: inherit;
+    min-width: 240px;
+    max-width: 320px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.wk-message-file:hover {
+    opacity: 0.92;
+}
+
+.wk-message-file-icon {
+    width: 44px;
+    height: 52px;
+    margin-right: 12px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 700;
+    flex-shrink: 0;
+    background: #eef0f3;
+    color: #4e5969;
+    letter-spacing: 0.5px;
+}
+
+.wk-message-file-icon-pdf { background: #ffebeb; color: #d32f2f; }
+.wk-message-file-icon-doc { background: #e3f2fd; color: #1976d2; }
+.wk-message-file-icon-xls { background: #e8f5e9; color: #388e3c; }
+.wk-message-file-icon-ppt { background: #fff3e0; color: #f57c00; }
+.wk-message-file-icon-zip { background: #fce4ec; color: #c2185b; }
+.wk-message-file-icon-audio { background: #f3e5f5; color: #7b1fa2; }
+.wk-message-file-icon-video { background: #e0f7fa; color: #0097a7; }
+.wk-message-file-icon-image { background: #e8eaf6; color: #303f9f; }
+.wk-message-file-icon-text { background: #f5f5f5; color: #616161; }
+
+.wk-message-file-info {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.wk-message-file-name {
+    font-size: 14px;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 1.4;
+}
+
+.wk-message-file-size {
+    font-size: 12px;
+    opacity: 0.55;
+    margin-top: 4px;
+}

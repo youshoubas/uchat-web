@@ -31,6 +31,7 @@ import {
 import { Subscribers } from "./Components/Subscribers";
 import UserSelect, { ContactsSelect } from "./Components/UserSelect";
 import { Card, CardCell } from "./Messages/Card";
+import { FileCell, FileContent } from "./Messages/File";
 import { GifCell, GifContent } from "./Messages/Gif";
 import { HistorySplitCell, HistorySplitContent } from "./Messages/HistorySplit";
 import { ImageCell, ImageContent } from "./Messages/Image";
@@ -121,6 +122,8 @@ export default class BaseModule implements IModule {
             return JoinOrganizationCell;
           case MessageContentTypeConst.smallVideo: // 小视频
             return VideoCell;
+          case MessageContentTypeConst.file: // 文件
+            return FileCell;
           case MessageContentTypeConst.historySplit: // 历史消息风格线
             return HistorySplitCell;
           case MessageContentTypeConst.time: // 时间消息
@@ -162,6 +165,10 @@ export default class BaseModule implements IModule {
       MessageContentTypeConst.smallVideo,
       () => new VideoContent()
     ); // 视频正文
+    WKSDK.shared().register(
+      MessageContentTypeConst.file,
+      () => new FileContent()
+    ); // 文件
     WKSDK.shared().register(
       MessageContentTypeConst.historySplit,
       () => new HistorySplitContent()
